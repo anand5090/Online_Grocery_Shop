@@ -3,7 +3,7 @@
 {% block body %}
 <style>
     img{
-        height:650px;
+        height:600px;
     }
     .carousel-caption {
         background-color: rgba(0,0,0,0.5);
@@ -20,7 +20,7 @@
         <div class="carousel-item {% if forloop.counter == 1 %}active{% endif %}">
           <img class="d-block w-100" src="{{i.image.url}}" alt="{{i.title}}">
           <div class="carousel-caption d-none d-md-block">
-            <h5>{{i.title}}</h5>
+            <h5 style="color:ivory;font-size: 1.5rem;">{{i.title}}</h5>
             <p>{{i.description}}</p>
           </div>
         </div>
